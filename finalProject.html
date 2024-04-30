@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB-115 Final Project</title>
-
-
+    <style></style>
 </head>
 <body>
-<form id = "myForm">
-
-    <input type = "text" id = "myInput" value = "Please enter your name." />
-    <input type = "button" id = "myButton" value = "Submit">
+    <form id = "myForm">
+        Name:<br>
+            <input type = "text" id = "myName" placeholder = "Please enter your name">
+        <br><br>
+        Email:<br>
+            <input type = "text" id = "myEmail" placeholder = "Please enter your email">
+        <br><br>
+        Goal:<br>
+        <input type = "text" id = "myGoal" placeholder = "Please enter your goal">
+        <br><br>
+        Breakfast:<br>
+            <input type = "text" id = "myBreakfast" placeholder = "Please enter your breakfast">
+        <br><br>
+        Lunch:<br>
+            <input type = "text" id = "myLunch" placeholder = "Please enter your lunch">
+        <br><br>
+        Snack:<br>
+            <input type = "text" id = "mySnack" placeholder = "Please enter your snack">
+        <br><br>
+        Dinner:<br>
+            <input type = "text" id = "myDinner" placeholder = "Please enter your dinner">
+        <br><br>
+            <input type ="button" id ="submitButton" value ="Submit"><input type="button" id="clearButton" value="Clear">
     </form>
-    <script>
-        document.getElementById("myButton").addEventListener('click',myWindow)
-        function myWindow()
-        {
-            visitorName = document.getElementById("myName").value;
-
-    myText = ("<html>\n<head>\n");
-    myText += ("<title>Welcome</title>\n");
-    myText += ("<style>\nnav\n{position: fixed;\nwidth: 101%;\ntop: 0%;\nfont-size: 100%;\nz-index: 4;\nbackground-color: rgb(33, 31, 50);\noverflow: hidden;\nright: -1%;}</style>\n");
-    myText += ("</head>\n<body>\n");
-    myText += ("<nav>\n<h1>Cooper Leone WEB.115.0002</h1>\n</a>\n</div>\n</nav>\n");
-    myText += ("\n<br>\n");
-    myText += ("Hello " + visitorName + ", this page was created on-the-fly!\n");
-    myText += ("</body>\n</html>");
-
-    flyWindow = window.open('about:blank','myPop','width=400,height=200,left=200,top=200');
-    flyWindow.document.write(myText);
-        }
-    </script>
+    <script src="projectJS.js"></script>
 </body>
 </html>

@@ -3,3 +3,5 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+input {min-width: 30px;}
